@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Feedback - White Label Games</title>
+  <link rel="stylesheet" href="./estilo/estilo.css">
+</head>
+
+<body>
+  <header>
+    <h1>Painel de Feedback - White Label Games</h1>
+  </header>
+
+  <main>
+    <!-- Formulário de cadastro -->
+    <section id="cadastro-usuario">
+      <h2>Cadastrar Usuário</h2>
+      <form id="form-cadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Formulário de envio de feedback -->
+    <section id="enviar-feedback">
+      <h2>Enviar Feedback</h2>
+      <form id="form-feedback">
+        <label for="jogo">Jogo:</label>
+        <input type="text" id="jogo" name="jogo" required />
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" required></textarea>
+
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </section>
+
+    <!-- Listagem dos feedbacks -->
+    <section id="lista-feedbacks">
+      <h2>Feedbacks Recentes</h2>
+      <ul id="feedbacks"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 White Label Games™</p>
+  </footer>
+  <script src="./scripts.js"></script>
+
+</body>
+</html>
